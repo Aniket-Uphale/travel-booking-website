@@ -29,7 +29,7 @@ background-color: #24262b;
         padding: 5px;
        margin: 20px;
         text-decoration: none;
-        font-size: 16px; 
+        font-size: 1rem; 
         border-radius: 4px; 
         transition:all 0.2s;
 }
@@ -181,7 +181,7 @@ background-color: #24262b;
    
 }
 .search-section .heading-title h2{
-    font-size:38px;
+    font-size:2.2rem;
     font-weight:600;
     color:#fff;
     padding:10px;
@@ -302,8 +302,8 @@ display:block;
     .search-section{
         padding:10px;
     }
-    .heading-title h2{
-        font-size: 28px;
+    .search-section .heading-title h2{
+        font-size: 2rem;
     }
     .search-button {
       width: 100%;
@@ -330,7 +330,7 @@ display:block;
 .section-title{
     text-align:center;
     color:#333;
-    font-size:28px;
+    font-size:1.5rem;
     font-weight:700;
 }
 .destination-section .container{
@@ -359,7 +359,7 @@ display:block;
 }
 
 .destination-title {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 10px;
     color:#333;
@@ -367,6 +367,7 @@ display:block;
 
 .destination-description {
     color: #666;
+    font-size:0.95rem;
 }
 
 @media(max-width: 767px){
@@ -397,7 +398,7 @@ display:block;
 }
 
 .offer-card {
-    width:350px;
+    width:330px;
     padding:10px;
     background-color: #fff;
     border-radius: 5px;
@@ -423,21 +424,22 @@ display:block;
 }
 
 .offer-title {
-    font-size:20px;
+    font-size:1rem;;
     font-weight:bold;
     margin-bottom: 10px;
     color:#333;
 }
 .offer-discount {
-    font-size:28px;
+    font-size:1.2rem;
     font-weight:bold;
     margin-bottom: 10px;
-    color:#fb4f2d;
+    color:#ff732d;
 }
 
 .offer-description {
     color: #666;
     margin-top:5px;
+    font-size:0.95rem;
 }
 
 @media(max-width: 767px){
@@ -487,14 +489,17 @@ display:block;
   
   .username {
     margin: 0;
+    font-size:1rem;
   }
   
   .review-text {
+    font-size:0.95rem;
+    color:#555;
     margin-bottom: 10px;
   }
   
   .checked {
-    color: #ff9800;
+    color: #ffbf29;
   }
   
   .star {
