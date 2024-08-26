@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinaton</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+    .destination-filter{
+        padding:30px;
+       
+    }
+    .destination-filter .container{
+        max-width: 1350px;
+        margin:50px auto;
+    } 
+   
+.filter{
+    margin:10px auto;
+    display:flex;
+    justify-content:center;
+}
+@media(max-width: 767px){
+    .fil-col{
+    display:block;
+  }
+  .filters {
+  display:contents;
+ 
+}
+  }
+
+
+.destination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:baseline;
+}
+
+.destination-card {
+  width: 300px;
+  padding:8px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card img {
+  width: 100%;
+  aspect-ratio:3/2;
+ 
+}
+
+.destination-card h3 {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.destination-card p {
+  margin: 5px 0;
+  padding: 5px;
+}
+.destination-card a{
+    text-decoration:none;
+    color:#2e74dc;
+    font-weight:600;
+    padding:10px;
+    margin-top:10px;
+}
+
+
+   </style>
+</head>
+<body>
+    <script src="js/script.js"></script>
+    <div class="header">
+        <div class="in-header">
+            <div class="left-head"><h2>Travel</h2>
+            </div>
+        <div class="right-head">
+           <a class="active" href="index.html">Home</a>
+           <a href="destination.html">Destination</a>
+           <a href="contact.html">Contact</a>
+           <a href="login.html">Login</a>
+           <div class="menu" style="position:relative; font-size:20px;cursor:pointer;" onclick="openNav()"><i class="fas fa-bars" style="color:rgb(255, 255, 255) ;"></i></div>
+         </div>
+         <div id="mySidenav" class="sidenav">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <a href="index.html"class="active">Home</a>
+           <a href="destination.html">Destination</a>
+           <a href="contact.html">Contact</a>
+           <a href="login.html">Login</a>
+           
+         </div>
+        </div>
+    </div>
+
+<section class="destination-filter">
+    <div class="filter">
+    <form class="search-form">
+        <h2 style="margin:10px;color:#333">Filter</h2>
+        <select id="priceFilter" class="search-input">
+            <option value="all">All Place</option>
+            <option value="budget">Beach</option>
+            <option value="moderate">Mountain</option>
+            <option value="luxury">City</option>
+          </select>
+        <select id="priceFilter" class="search-input">
+            <option value="all">All Prices</option>
+            <option value="budget">Budget</option>
+            <option value="moderate">Moderate</option>
+            <option value="luxury">Luxury</option>
+          </select>
+          <select id="activityFilter" class="search-input">
+            <option value="all">All Activities</option>
+            <option value="adventure">Adventure</option>
+            <option value="relaxation">Relaxation</option>
+            <option value="cultural">Cultural</option>
+          </select>
+           
+        <button type="submit" class="search-button">Submit</button>
+    
+      </form>
+    </div>
+    <div class="container">
+ 
+
+          <div class="section-title">Destinations</div>
+          <div class="line"></div>
+      <div class="destination-list">
+        <div class="destination-card">
+          <img src="img/1.jpg" alt="Destination 1">
+          <h3>Destination 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Starting Price: $100</p>
+          <a href="#">Deatils</a>
+        </div>
+      
+        <div class="destination-card">
+          <img src="img/2.jpg" alt="Destination 2">
+          <h3>Destination 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Starting Price: $200</p>
+          <a href="#">Deatils</a>
+        </div>
+
+    
+            <div class="destination-card">
+              <img src="img/3.jpg" alt="Destination 3">
+              <h3>Destination 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Starting Price: $100</p>
+              <a href="#">Deatils</a>
+            </div>
+          
+            <div class="destination-card">
+              <img src="img/4.jpg" alt="Destination 4">
+              <h3>Destination 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Starting Price: $200</p>
+              <a href="#">Deatils</a>
+            </div>
+
+    
+                <div class="destination-card">
+                  <img src="img/1.jpg" alt="Destination 5">
+                  <h3>Destination 1</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Starting Price: $100</p>
+                  <a href="#">Deatils</a>
+                </div>
+              
+                <div class="destination-card">
+                  <img src="img/2.jpg" alt="Destination 2">
+                  <h3>Destination 2</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Starting Price: $200</p>
+                  <a href="#">Deatils</a>
+                </div>
+      
+        <!-- Add more destination cards as needed -->
+      </div>
+    </div>
+    </section>
+
+    <div class="floating-icon">
+        <i class="fa fa-envelope"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+       
+      </div>
+<div class="footer">
+    <h3 style="text-align:center;">Travel Booking Website</h3>
+  </div>
+
+  
+</body>
+</html>

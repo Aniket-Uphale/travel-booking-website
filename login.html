@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinaton</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+    
+.login{
+    margin:50px auto;
+    padding:50px;
+}
+.login .container{
+    margin:30px auto;
+ 
+}
+    .login form {
+  width:400px;
+  padding:30px;
+  margin: 5px auto;
+  border-radius:5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.login label {
+  display: block;
+  margin-top: 10px;
+}
+
+.login input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding:8px;
+  font-size:15px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.login input[type="text"],
+input[type="password"],
+textarea:focus {
+    border-color: #bbb;
+    outline: none;
+}
+
+.login input[type="submit"] {
+  margin:12px auto;
+  margin-top:20px;
+  padding:12px;
+  background-color: #2e74dc;
+  color: #fff;
+  font-weight:bold;
+  display:block;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.login input[type="submit"]:focus {
+    background-color: #224299;
+}
+.login a{
+    text-decoration:none;
+    color:#333;
+    margin:20px auto;
+    text-align:center;
+    display:block;
+}
+
+@media (max-width: 767px) {
+    .login form  {
+      width: 100%;
+      margin-bottom:10px;
+      padding:20px;
+    }
+    .login .container{
+        margin:0 auto;
+    }
+}
+
+   </style>
+</head>
+<body>
+    <script src="js/script.js"></script>
+    <div class="header">
+        <div class="in-header">
+            <div class="left-head"><h2>Travel</h2>
+            </div>
+        <div class="right-head">
+           <a class="active" href="index.html">Home</a>
+           <a href="destination.html">Destination</a>
+           <a href="contact.html">Contact</a>
+           <a href="login.html">Login</a>
+           <div class="menu" style="position:relative; font-size:20px;cursor:pointer;" onclick="openNav()"><i class="fas fa-bars" style="color:rgb(255, 255, 255) ;"></i></div>
+         </div>
+         <div id="mySidenav" class="sidenav">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <a href="index.html"class="active">Home</a>
+           <a href="destination.html">Destination</a>
+           <a href="contact.html">Contact</a>
+           <a href="login.html">Login</a>
+           
+         </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="login">
+        <div class="section-title">User Login</div>
+        <div class="line"></div>
+        <div class="container">
+            <form id="loginForm" method="POST" action="">
+                <label for="name">User Name:</label>
+                <input type="text" id="name" name="name"  autocomplete="none" required>
+                
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass"  required>
+                
+                <input type="submit" value="Login">
+
+                <label for=""><a href="#">New User? Click here.</a></label>
+              </form>
+              
+        </div>
+    
+    </section>
+    
+    <div class="floating-icon">
+        <i class="fa fa-envelope"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+       
+      </div>
+    
+
+
+<div class="footer">
+    <h3 style="text-align:center;">Travel Booking Website</h3>
+  </div>
+
+  
+</body>
+</html>

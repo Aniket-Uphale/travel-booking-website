@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinaton</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+
+.contact{
+    margin:50px auto;
+    padding:50px;
+}
+.contact .container{
+    margin:30px auto;
+ 
+}
+    .contact form {
+  width:400px;
+  padding:30px;
+  margin: 5px auto;
+  border-radius:2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact label {
+  display: block;
+  margin-top: 10px;
+}
+
+.contact input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding:5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}.contact input[type="text"],
+input[type="email"],
+textarea:focus {
+    border-color: #bbb;
+    outline: none;
+}
+
+.contact input[type="submit"] {
+  margin:12px auto;
+  padding:12px;
+  background-color: #2e74dc;
+  color: #fff;
+  font-weight:bold;
+  display:block;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact input[type="submit"]:focus {
+    background-color: #224299;
+}
+
+@media (max-width: 767px) {
+    .contact form  {
+      width: 100%;
+      margin-bottom:10px;
+      padding:20px;
+    }
+    .contact .container{
+        margin:0 auto;
+    }
+}
+   </style>
+</head>
+<body>
+    <script src="js/script.js"></script>
+    <div class="header">
+        <div class="in-header">
+            <div class="left-head"><h2>Travel</h2>
+            </div>
+        <div class="right-head">
+           <a class="active" href="index.html">Home</a>
+           <a href="destination.html">Destination</a>
+           <a href="contact.html">Contact</a>
+           <a href="login.html">Login</a>
+           <div class="menu" style="position:relative; font-size:20px;cursor:pointer;" onclick="openNav()"><i class="fas fa-bars" style="color:rgb(255, 255, 255) ;"></i></div>
+         </div>
+         <div id="mySidenav" class="sidenav">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <a href="index.html"class="active">Home</a>
+           <a href="destination.html">Destination</a>
+           <a href="contact.html">Contact</a>
+           <a href="login.html">Login</a>
+           
+         </div>
+        </div>
+    </div>
+
+
+
+<section class="contact">
+    <div class="section-title">Contact Us</div>
+    <div class="line"></div>
+    <div class="container">
+        <form id="contactForm" method="POST" action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" cols="50" required></textarea>
+            
+            <input type="submit" value="Submit">
+          </form>
+          
+    </div>
+
+</section>
+<div class="floating-icon">
+    <i class="fa fa-envelope"></i>
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+   
+  </div>
+
+
+<div class="footer">
+    <h3 style="text-align:center;">Travel Booking Website</h3>
+  </div>
+
+  
+</body>
+</html>

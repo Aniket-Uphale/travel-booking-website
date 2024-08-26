@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+   
+     <div class="header">
+         <div class="in-header">
+             <div class="left-head"><h2>Travel</h2>
+             </div>
+         <div class="right-head">
+            <a class="active" href="index.html">Home</a>
+            <a href="destination.html">Destination</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <div class="menu" style="position:relative; font-size:20px;cursor:pointer;" onclick="openNav()"><i class="fas fa-bars" style="color:rgb(255, 255, 255) ;"></i></div>
+          </div>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"class="active">Home</a>
+            <a href="destination.html">Destination</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            
+          </div>
+         </div>
+     </div>
+
+
+<section class="search-section" style="background-image:url('img/bg.jpg');background-repeat:no-repeat;background-position:center;background-size:cover; box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.9);">
+  <div class="container">
+   
+      <div class="heading-title">
+       <h2>Let's make your best trip ever</h2>
+       <p>Plan & make book your perfect trip with expert advice, travel tips, destination information & inspiration from us.</p>
+      </div>
+
+  
+   
+
+  </div>
+</section>
+
+
+<section class="search">
+  <div class="search-container">
+ 
+      <form class="search-form">
+        <input type="text" class="search-input"  autocomplete="none" placeholder="Enter your destination" required>
+      
+        <input type="date"  class="search-input" required>
+        <select class="search-input" required>
+         <option value="">Guest</option>
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+        </select> 
+        <button type="submit" class="search-button">Search</button>
+      </form>
+  
+</div>
+
+</section>
+
+<script>
+  // Get the current date
+  var today = new Date().toISOString().split('T')[0];
+  
+  // Set the minimum date for the date picker
+  document.getElementById("datepicker").setAttribute("min", today);
+    
+</script>
+
+<script src="js/script.js"></script>
+
+<section class="destination-section">
+  <div class="section-title">Popular Destinations</div>
+  <div class="line"></div>
+  <div class="container">
+  <div class="destination">
+      <img src="img/1.jpg" alt="Destination 1">
+      <div class="destination-content">
+          <h2 class="destination-title">Destination 1</h2>
+          <p class="destination-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus justo vel tortor tristique fringilla.</p>
+      </div>
+  </div>
+  
+  <div class="destination">
+      <img src="img/2.jpg" alt="Destination 2">
+      <div class="destination-content">
+          <h2 class="destination-title">Destination 2</h2>
+          <p class="destination-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+      </div>
+  </div>
+  
+  <div class="destination">
+      <img src="img/3.jpg" alt="Destination 3">
+      <div class="destination-content">
+          <h2 class="destination-title">Destination 3</h2>
+          <p class="destination-description">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+      </div>
+  </div>
+
+</div>
+</section>
+
+
+<section class="offer">
+  <div class="section-title">Special Offer</div>
+  <div class="line"></div>
+
+  <div class="container">
+    
+    <div class="offer-line">
+    <div class="offer-card">
+        <img src="img/4.jpg" alt="card 1">
+        <div class="offer-content">
+            <h2 class="offer-discount"><i class="	fas fa-tags"></i> 30% Dicount</h2>
+            <h2 class="offer-title">Destination 3</h2>
+            <p class="offer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus justo vel tortor tristique fringilla.</p>
+            
+        </div>
+        <a href="#">Click Here</a>
+    </div>
+  
+    <div class="offer-card">
+      <img src="img/2.jpg" alt="card 1">
+      <div class="offer-content">
+          <h2 class="offer-discount"><i class="	fas fa-tags"></i> 40% Dicount</h2>
+          <h2 class="offer-title">Destination 2</h2>
+          <p class="offer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus justo vel tortor tristique fringilla.</p>
+          
+      </div>
+      <a href="#">Click Here</a>
+  </div>
+
+  <div class="offer-card">
+    <img src="img/bg.jpg" alt="card 1">
+    <div class="offer-content">
+        <h2 class="offer-discount"><i class="	fas fa-tags"></i> 20% Dicount</h2>
+        <h2 class="offer-title">Destination 3</h2>
+        <p class="offer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus justo vel tortor tristique fringilla.</p>
+        
+    </div>
+    <a href="#">Click Here</a>
+</div>
+
+  </div>
+
+</div>
+</section>
+
+
+<section class="review">
+
+  <div class="section-title">Reviews & Rating</div>
+  <div class="line"></div>
+  <br>
+  <div class="container">
+    <div class="review-card">
+      <div class="user-info">
+        <h3 class="username">Sasuke Uchiha</h3>
+      </div>
+      <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt ullamcorper sapien vel eleifend."</p>
+      <div class="rating">
+        <h3>Rating</h3>
+        <br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+
+    </div>
+
+    <div class="review-card">
+      <div class="user-info">
+        <h3 class="username">Rock Lee</h3>
+      </div>
+      
+     <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt ullamcorper sapien vel eleifend."</p>
+      
+     <div class="rating">
+      <h3>Rating</h3>
+      <br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+      </div>
+
+    </div>
+
+    <div class="review-card">
+      <div class="user-info">
+        <h3 class="username">Naruto Uzumaki</h3>
+      </div>
+      <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt ullamcorper sapien vel eleifend."</p>
+      <div class="rating">
+        <h3>Rating</h3>
+        <br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="floating-icon">
+  <i class="fa fa-envelope"></i>
+  <i class="fa fa-facebook"></i>
+  <i class="fa fa-instagram"></i>
+  <i class="fa fa-twitter"></i>
+ 
+</div>
+
+<div class="footer">
+  <h3 style="text-align:center;">Travel Booking Website</h3>
+</div>
+
+</body>
+</html>
